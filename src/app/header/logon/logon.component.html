@@ -1,0 +1,18 @@
+<h2 mat-dialog-title>Cadastrar</h2>
+
+<mat-dialog-content>
+	<div class = "container">
+		<ul>
+			<li>
+				<input class = "email" type="email" [(ngModel)]="email" (keyup.enter)="cadastrar()" placeholder="Email">
+			</li>
+			<li>
+				<input class = "password" type="password" [(ngModel)]="password" (keyup.enter)="cadastrar()" placeholder="Senha">
+			</li>
+		</ul>
+	</div>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button class="mat-raised-button entrar" (click)="cadastrar()">Cadastrar</button>
+</mat-dialog-actions>
